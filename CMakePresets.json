@@ -1,11 +1,23 @@
 {
+    "version": 4,
     "cmakeMinimumRequired": {
         "major": 3,
-        "minor": 23
+        "minor": 23,
+        "patch": 0
     },
-    "buildPresets": [
-    ],
     "configurePresets": [
-    ],
-    "version": 4
+        {
+            "name": "DefaultPreset",
+            "displayName": "Default preset",
+            "description": "",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_C_COMPILER": "$env{CUSTOM_CLANG_EXECUTABLE}",
+                "CMAKE_CXX_COMPILER": "$env{CUSTOM_CLANG_EXECUTABLE}",
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}"
+            }
+        }
+    ]
 }

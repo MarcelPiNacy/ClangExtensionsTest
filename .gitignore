@@ -1,3 +1,5 @@
 build/
 .cache/
 .vs/
+test_file.txt
+.clangd
