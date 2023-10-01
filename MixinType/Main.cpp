@@ -1,8 +1,7 @@
 
 
 
-constexpr char source_path[] = SOURCE_PATH;
-constexpr char build_path[] = BUILD_PATH;
+using TestType = __mixin_type("");
 
 
 
