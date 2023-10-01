@@ -1,0 +1,11 @@
+{
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 23
+    },
+    "buildPresets": [
+    ],
+    "configurePresets": [
+    ],
+    "version": 4
+}
