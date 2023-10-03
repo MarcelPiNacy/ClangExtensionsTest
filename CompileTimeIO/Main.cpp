@@ -28,7 +28,7 @@ int main()
         {
             constexpr auto size = __builtin_file_size(path, path_size);
             std::array<char, size> data = { };
-            __builtin_file_read(path, path_size, data.data(), data.size());
+            (void)__builtin_file_read(path, path_size, data.data(), data.size());
             return data;
         }
         else
